@@ -1,0 +1,13 @@
+en:
+  activerecord:
+    errors:
+      models:
+        bank_account:
+          attributes:
+            balance:
+              max_attempts_reached: failed to be updated
+              not_enough_funds: is not enough to transfer
+  transactions:
+    create:
+      success: Funds successfully transferred
+      danger: 'Failed to transfer funds: %{msg}'

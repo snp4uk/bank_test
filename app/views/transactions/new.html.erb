@@ -1,0 +1,10 @@
+<body>
+<% if user_signed_in? %>
+  <p> Your current funds: <%=current_user.bank_account.balance %></p>
+  <%= simple_form_for transaction do |f| %>
+    <%= f.input  :destination_bank_account_id, collection: users, label_method: :full_name, value_method: :bank_account_id, label: 'User', include_blank: false %>
+    <%= f.input  :amount %>
+    <%= f.button :submit %>
+  <% end %>
+<% end %>
+</body>
