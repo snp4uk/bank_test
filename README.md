@@ -52,10 +52,12 @@ Open your browser and go to `http://localhost:3000/`
 >$ bundle exec rake "users:create[user_email,user_password]"
 
 `user_email` - required, string, valid email address
+
 `user_password` - required, string, 6 or more characters 
 ### Add funds to user's bank account
 >$ bundle exec rake "users:refill_account[user_email,amount]"
 
 `user_email` - required, string, email address of existing user
+
 `amount` - require, float, greater than 0
 
